@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: cloudreve
+    env: docker
+    repo: https://github.com/Guangsudalao-Studio/cloudreve-render.git
+    region: Singapore
+    plan: free
+    healthCheckPath: /
+    envVars:
+    - key: PORT
+      value: 10000
+    - key: DB_PORT
+      # value:
+      sync: false
+    - key: DB_TYPE
+      # value:
+      sync: false
+    - key: DB_USER
+      # value:
+      sync: false
+    - key: DB_PASSWORD
+      # value:
+      sync: false
+    - key: DB_NAME
+      # value:
+      sync: false
+    - key: DB_HOST
+      # value:
+      sync: false
+    - key: DB_TABLEPREFIX
+      # value:
+      sync: false
+    - key: REDIS_SERVER
+      # value:
+      sync: false
+    - key: REDIS_PASSWORD
+      # value:
+      sync: false
+    - key: REDIS_DB
+      # value:
+      sync: false
